@@ -3,20 +3,15 @@
 template <class A>
 class Person
 {
-	A val;
+	A* arr = nullptr;
+	int size = 0;
 public:
-	A getVal();
-	void setVal(A a);
+	int getSize();
+
 };
 
 template<class A>
-inline A Person<A>::getVal()
+inline int Person<A>::getSize()
 {
-	return val;
-}
-
-template<class A>
-inline void Person<A>::setVal(A a)
-{
-	val = a;
+	return size;
 }
