@@ -6,5 +6,7 @@ using namespace std;
 
 int main()
 {
-	
+	Person<int> a;
+	a.addElem(0, 1);
+	a.show();
 }
